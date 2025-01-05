@@ -18,6 +18,8 @@ The Customer Messaging System is designed to send personalized messages to custo
   - `json` (for loading message data)
   - `smtplib` (for email sending)
   - `requests` (for WhatsApp API, if needed)
+  pip install -r requirements.txt
+
 
 ## Setup Instructions
 
@@ -26,3 +28,15 @@ The Customer Messaging System is designed to send personalized messages to custo
    ```bash
    git clone <repository_url>
    cd <project_directory>
+2. **Setup virtual enviornment:**  
+  ```bash
+  On windows:
+   python -m venv venv 
+  On macOS/Linux:
+   python3 -m venv venv
+3. **Activate virtual enviornment:**  
+  ```bash
+  On windows:
+    .\venv\Scripts\activate
+  On macOS/Linux:
+    source venv/bin/activate
