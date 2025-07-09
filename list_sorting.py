@@ -12,6 +12,7 @@ def fetch_and_sort_list():
         'Authorization' : f'Bearer {ACCESS_TOKEN}',
         'Content-Type': 'application/json'
     }
+
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         lists = response.json().get('lists',[])
